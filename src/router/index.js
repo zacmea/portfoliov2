@@ -7,7 +7,7 @@ import ContactView from '../views/ContactView.vue';
 
 const routes = [
     {
-        path: '/',
+        path: '/home',
         name: 'home',
         component: HomeView
     },
@@ -30,7 +30,12 @@ const routes = [
         path: '/contact',
         name: 'contact',
         component: ContactView
-    }
+    },
+    {
+        path: '/',
+        name: 'home',
+        component: HomeView
+    },
 ];
 
 const router = createRouter({

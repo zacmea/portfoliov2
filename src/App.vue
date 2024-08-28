@@ -1,19 +1,14 @@
 <script>
 import NavBar from "./components/NavBar.vue";
 import HomeView from "./views/HomeView.vue";
-// import ProjectsView from "./views/ProjectsView.vue";
 
-// import style from './assets/style.css';
-
-// import { RouterLink } from "vue-router";
 import { RouterView } from "vue-router";
-// import MainLayout from './components/MainLayout.vue'
 
 export default {
     name: "App",
     components: {
         NavBar,
-        // HomeView,
+        HomeView,
     },
 };
 </script>
@@ -22,7 +17,11 @@ export default {
     <div id="app">
         <NavBar />
         <main>
-            <router-view />
+            <!-- the v-slot catches whatever component would normally show for router-view -->
+            <router-view v-slot="{ Component }">
+                <!-- if there's no component, show HomeView instead -->
+                <component :is="Component || 'HomeView'" />
+            </router-view>
         </main>
     </div>
 </template>

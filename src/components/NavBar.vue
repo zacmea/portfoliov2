@@ -7,7 +7,7 @@ export default {
 <template>
       <nav class="bg-blue-500 p-4 fixed top-0 w-full">
             <div class="container mx-auto flex justify-between items-center">
-                <router-link to="/" class="text-black text-2xl font-bold">
+                <router-link to="/home" class="text-black text-2xl font-bold">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
