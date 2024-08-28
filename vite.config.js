@@ -3,6 +3,6 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/portfoliov2/',
+    base: '/zacmea.github.io/',
     plugins: [vue()],
 });
