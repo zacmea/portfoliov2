@@ -13,7 +13,7 @@ const routes = [
     },
     {
         path: '/portfoliov2',
-        name: 'home',
+        name: 'home2',
         component: HomeView
     },
     {
