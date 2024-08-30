@@ -1,5 +1,5 @@
 <script>
-import headshot from "../assets/headshot.jpg";
+import headshot from "../assets/headshot.jpg"; // Import the image
 export default {
     name: "HomeView",
     data() {
